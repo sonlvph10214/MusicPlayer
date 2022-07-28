@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="@dimen/dp_20"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imgCloseDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_24"
+        android:layout_alignParentEnd="true"/>
+
+
+    <EditText
+        android:id="@+id/edtNamePlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bg_white"
+        android:hint="Tên playlist"
+        android:layout_below="@id/imgCloseDialog"
+        android:textSize="@dimen/sp_20"
+        android:padding="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+
+        />
+
+    <TextView
+        android:id="@+id/tvTitleAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNamePlayList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/custom_bg_btn_play_pause"
+        android:padding="@dimen/dp_12"
+        android:text="Thêm Playlist"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".view.stream.PlayListDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvNamePlayList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_song"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/favouriteBtnPA"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/heart_orange"
+            android:visibility="invisible"
+            app:tint="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgPlayListDetail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_48"
+        android:src="@drawable/play_list"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutPlayAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPlayListDetail"
+        android:layout_marginTop="@dimen/dp_20"
+        >
+       <LinearLayout
+           android:id="@+id/linearAddMusic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toStartOf="@id/btnPlayMusic"
+           android:orientation="vertical"
+           android:layout_marginEnd="@dimen/dp_24"
+           android:layout_centerVertical="true">
+           <ImageView
+               android:layout_width="@dimen/dp_24"
+               android:layout_height="@dimen/dp_24"
+               android:src="@drawable/ic_add_circle_outline"
+               android:layout_gravity="center"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Thêm bài"
+               android:textColor="@color/black"/>
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnPlayMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_bg_btn_play_pause"
+            android:paddingHorizontal="@dimen/dp_24"
+            android:paddingVertical="@dimen/dp_12"
+            android:text="Phát nhạc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvPlayListDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutPlayAdd"
+        android:layout_marginVertical="@dimen/dp_24"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:paddingEnd="@dimen/dp_10"/>
+
+
+
+</RelativeLayout>

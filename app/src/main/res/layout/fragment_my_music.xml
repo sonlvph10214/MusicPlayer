@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mFrame"
+    android:layout_height="match_parent"
+    tools:context=".view.stream.MyMusicFragment">
+
+    <TextView
+        android:id="@+id/tvTitleLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:gravity="start"
+        android:paddingVertical="@dimen/dp_8"
+        android:text="Library"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearPerson"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleLibrary"
+        android:layout_marginStart="@dimen/dp_12"
+        android:background="@drawable/custom_bg_white"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/dp_24"
+        android:paddingStart="@dimen/dp_32">
+
+        <ImageView
+            android:id="@+id/imgMySong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_song" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="Bài hát"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvCountMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearUpload"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleLibrary"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_toEndOf="@id/linearPerson"
+        android:background="@drawable/custom_bg_white"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/dp_24"
+        android:paddingStart="@dimen/dp_32"
+        android:paddingEnd="60dp">
+
+        <ImageView
+            android:id="@+id/imgUpload"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_my_upload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="Upload"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearArtist"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearPerson"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/custom_bg_white"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/dp_24"
+        android:paddingStart="@dimen/dp_32"
+        android:paddingEnd="60dp">
+
+        <ImageView
+            android:id="@+id/imgArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_artist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="Ca sĩ"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPodCast"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearUpload"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_toEndOf="@id/linearArtist"
+        android:background="@drawable/custom_bg_white"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_8"
+        android:paddingStart="@dimen/dp_32"
+        >
+
+        <ImageView
+            android:id="@+id/imgPodCast"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_my_podcast" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="PodCast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvPlayList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearArtist"
+        android:layout_marginStart="@dimen/dp_12"
+        android:text="@string/playlist"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_12"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:id="@+id/linearAddPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPlayList"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgAddPlayList"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            android:background="@drawable/custom_bg_img_playlist"
+            android:padding="@dimen/dp_12"
+            android:src="@drawable/ic_add_circle_white" />
+
+        <TextView
+            android:id="@+id/tvAddPlayList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tạo mới playlist"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearAddPlayList"
+        android:layout_marginTop="@dimen/dp_12"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:paddingEnd="@dimen/dp_10" />
+
+
+
+
+</RelativeLayout>

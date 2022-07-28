@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="@dimen/dp_20"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvTitleSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to log out?"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tvYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:layout_marginVertical="@dimen/dp_12"
+        android:layout_below="@id/tvTitleSignOut"
+        android:layout_toLeftOf="@id/tvNo"
+        />
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:layout_marginVertical="@dimen/dp_12"
+        android:layout_below="@id/tvTitleSignOut"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+
+
+</RelativeLayout>

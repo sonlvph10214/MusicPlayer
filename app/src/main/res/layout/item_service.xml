@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_12">
+    <RelativeLayout
+        android:id="@+id/relativeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSoundCloud"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_sound_cloud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_toRightOf="@id/imgSoundCloud"
+            android:text="@string/soundcloud"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tvNameSongService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSoundCloud"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="@string/name_song"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tvArtistSongService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameSongService"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="@string/singer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <LinearLayout
+            android:id="@+id/linearControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArtistSongService"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgPreviousService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_skip_previous" />
+
+            <ImageView
+                android:id="@+id/imgPlayService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_12"
+                android:src="@drawable/ic_play_service" />
+
+            <ImageView
+                android:id="@+id/imgNextService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_skip_next" />
+
+
+        </LinearLayout>
+
+<!--        <SeekBar-->
+<!--            android:id="@+id/seekBarService"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/linearControl"-->
+<!--            android:layout_marginTop="@dimen/dp_20" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/seekBarService"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/sp_16" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/seekBarService"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:text="03:00"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/sp_16" />-->
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/ic_close_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

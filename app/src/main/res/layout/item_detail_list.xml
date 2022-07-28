@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_bg_view_item"
+    android:padding="@dimen/dp_12">
+
+    <TextView
+        android:id="@+id/tvTitleDetailList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_toEndOf="@id/imgDetailList"
+        android:lines="1"
+        android:text="@string/title_song"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tvMusicGenreDetailList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleDetailList"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_toEndOf="@id/imgDetailList"
+        android:text="@string/singer"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMusicGenreDetailList"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_toEndOf="@id/imgDetailList"
+        android:textSize="@dimen/sp_12" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgDetailList"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/img_song"
+        app:riv_corner_radius="@dimen/dp_10" />
+
+
+</RelativeLayout>

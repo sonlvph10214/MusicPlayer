@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".view.playsong.PlaySongFragment">
+
+    <ImageView
+        android:id="@+id/imgPlaySong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_song" />
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgPlaySongBack"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/custom_bg_white"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_down_arrow" />
+
+    <TextView
+        android:id="@+id/tvNamePlaySong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_24"
+        android:text="@string/name_song"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvArtistPlaySong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamePlaySong"
+        android:layout_marginHorizontal="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/made_by"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:id="@+id/btnPlaySong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_button"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/btnNextSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_next_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/btnPreviousSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_previous_button"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/linearHeart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgHeart"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_heart_white_toggle" />
+
+        <TextView
+            android:id="@+id/tvAmountHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="64K"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_comment"
+            android:layout_marginStart="@dimen/dp_20"/>
+
+        <TextView
+            android:id="@+id/tvAmountCmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="7908"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_20"
+            android:src="@drawable/ic_share_white" />
+        <ImageView
+            android:id="@+id/imgRepeat"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_20"
+            android:src="@drawable/ic_repeat" />
+        <ImageView
+            android:id="@+id/imgMorePlaySong"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_20"
+            android:src="@drawable/ic_more_white" />
+
+
+    </LinearLayout>
+    <SeekBar
+        android:max="100"
+        android:progress="33"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/btnPlaySong"
+        android:layout_marginTop="@dimen/dp_12"/>
+
+
+
+<!--    <com.example.soundcloud.soundwaveview.VisualizerView-->
+<!--        android:id="@+id/visualizerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@id/btnPlaySong"-->
+<!--        />-->
+
+
+
+</RelativeLayout>
