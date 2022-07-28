@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.soundcloud.view.home.HomeFragment
+import com.example.soundcloud.view.home.HomeZingFragment
 import com.example.soundcloud.view.personal.PersonalFragment
 import com.example.soundcloud.view.search.SearchFragment
 import com.example.soundcloud.view.stream.MyMusicFragment
@@ -17,7 +18,7 @@ class BottomNavigationViewPagerAdapter (fragmentActivity: FragmentActivity):Frag
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> HomeFragment()
+            0 -> HomeZingFragment()
 
             1 -> MyMusicFragment()
 
@@ -27,7 +28,7 @@ class BottomNavigationViewPagerAdapter (fragmentActivity: FragmentActivity):Frag
 
 
 
-            else -> HomeFragment()
+            else -> HomeZingFragment()
         }
     }
 

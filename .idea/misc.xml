@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/TCOM/MusicPlayer/app/src/main/res/layout/fragment_home_zing.xml" value="0.1522289766970618" />
+        <entry key="..\:/TCOM/MusicPlayer/app/src/main/res/layout/item_party.xml" value="0.291213768115942" />
+        <entry key="..\:/TCOM/MusicPlayer/app/src/main/res/layout/item_zing_artist.xml" value="0.291213768115942" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
